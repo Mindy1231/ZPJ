@@ -1,0 +1,8 @@
+const projectData={
+ byte:{tag:'01 / PRODUCT & OPERATIONS',title:'字节跳动 · 业务分析与产品方案',text:'实习作品展示入口。后续将补充业务场景、痛点分析、产品方案、流程图与运营复盘等真实成果。',note:'当前内容为项目介绍占位，尚未链接具体案例页。'},
+ green:{tag:'02 / BRAND & UX',title:'绿意循环',text:'环保主题设计项目，现有素材包括植物种植记录、用户调查、品牌/IP、产品结构与移动端界面。',note:'目前仅使用项目展板缩略图。后续可点击进入完整案例页面。'},
+ unity:{tag:'03 / UNITY & INTERACTIVE',title:'沉浸式交互与空间叙事',text:'Unity、3D、互动原型与沉浸式体验相关作品的集合入口。',note:'这里先作为作品分类入口，待补入真实项目标题、截图、视频与交互链接。'},
+ ai:{tag:'04 / AI & VISUAL',title:'AI视觉创作实验',text:'生成式视觉、创意概念与数字内容制作的实验作品入口。',note:'后续以真实生成过程与最终作品替换当前概念封面。'}};
+const modal=document.getElementById('modal');document.querySelectorAll('.project').forEach(card=>card.addEventListener('click',()=>{
+if(card.dataset.project==='green'){window.location.href='green-loop.html';return;}
+const d=projectData[card.dataset.project];document.getElementById('modalTag').textContent=d.tag;document.getElementById('modalTitle').textContent=d.title;document.getElementById('modalText').textContent=d.text;document.getElementById('modalNote').textContent=d.note;modal.classList.add('open');modal.setAttribute('aria-hidden','false')}));function close(){modal.classList.remove('open');modal.setAttribute('aria-hidden','true')}document.getElementById('closeModal').addEventListener('click',close);modal.addEventListener('click',e=>{if(e.target===modal)close()});document.addEventListener('keydown',e=>{if(e.key==='Escape')close()});document.querySelector('.menu').addEventListener('click',()=>{document.querySelector('nav').classList.toggle('mobile-open')});document.querySelectorAll('nav a').forEach(a=>a.addEventListener('click',()=>document.querySelector('nav').classList.remove('mobile-open')));
