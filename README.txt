@@ -1,17 +1,11 @@
-孟 Zhang｜个人作品集网站原型
+张萌｜个人作品集网站
 
-使用方法：
-1. 解压整个 ZIP 文件。
-2. 双击 index.html，用浏览器打开。
-3. 修改首页文字、项目卡片、邮箱等内容：用任意文本编辑器打开 index.html，搜索对应文字修改。
-4. 修改样式：编辑 styles.css。修改点击卡片弹出的简介：编辑 script.js。
-5. 图片资源在 assets 文件夹中。
+网站入口：https://mindy1231.github.io/ZPJ/
 
-注意：项目3、4封面目前是视觉占位，不能当作真实项目成果；项目2使用了原始展板缩略图。
+项目页面：
+- project-01.html：排班管理产品化
+- green-loop.html：绿意循环
+- floodguard.html：FLOODGUARD
 
-发布为公开链接：可将整个文件夹拖入 Netlify Drop（需要自行登录/授权）或上传至 GitHub Pages。当前文件是本地可编辑版本，没有自动公开托管。
-
-建议正式投递时同时提供 PDF 作品集。陌生网站链接可先在简历中清楚标注“个人作品集网站”，并使用自己的域名/HTTPS，降低 HR 对陌生链接的疑虑。
-
-
-本次更新：绿意循环项目卡片现进入 green-loop.html；完整 PDF 在线预览及 PDF/PPTX 下载文件位于 assets/。
+网站为在线浏览版本，不提供 PDF、PPTX 或其他项目文件下载。
+页面样式由 styles.css 控制，移动端导航由 script.js 控制。
